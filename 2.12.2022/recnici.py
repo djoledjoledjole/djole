@@ -92,7 +92,6 @@
 #     if k == 'kubikaza':
 #         print(F'kubikaza je: {v}')
 # #######################################################
-
 # automobili = {
 #     "BG-123" : {
 #         'marka' : 'citroen',
@@ -121,7 +120,6 @@
 #         print(f'{k}:{v}')
 #     print('============================')
 ##########################################################
-
 # kursevi = {
 #     'ppf' : {
 #         'naziv' : 'python fundamentals',
@@ -137,8 +135,10 @@
 #     for k, v in detalji.items():
 #         print(id_kursa, k,v)
 ##########################################################
-# RECNIK: {skup:vrednost}
+# RECNIK:   ______ = {skup:vrednost}
 # SKUPOVI:  ______ = {}
+# LISTE:    ______ = []
+##########################################################
 # boje = {'bela', 'plava', 'crvena'}
 # print(boje)
 # boje.add('zuta')
