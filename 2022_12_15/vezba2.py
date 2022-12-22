@@ -19,8 +19,8 @@ class Mec:     #       tim   tim   int     skor
         print('utakmica je pocela')
         
         while True:
-            # self.skor.domaci = random.randint(0,10)
-            # self.skor.gosti = random.randint(0, 10)
+            self.skor.domaci = random.randint(0,10)
+            self.skor.gosti = random.randint(0, 10)
 
             nas_broj_tim_1 = 5
             nas_broj_tim_2 = 7
