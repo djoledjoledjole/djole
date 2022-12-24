@@ -1,5 +1,6 @@
 import random
 import time
+
 class Tim:
     def __init__(self, nazivTima):
         self.nazivTima = nazivTima
@@ -13,14 +14,15 @@ class Mec:     #       tim   tim   int     skor
         self.domaci = tim1
         self.gosti = tim2
         self.minuti = minuti
-        self.skor = skor.Skor()
+        self.skor = skor
 
     def start(self):
         print('utakmica je pocela')
         
         while True:
-            self.skor.domaci = random.randint(0,10)
-            self.skor.gosti = random.randint(0, 10)
+            
+            # self.skor.domaci = random.randint(0,10)
+            # self.skor.gosti = random.randint(0, 10)
 
             nas_broj_tim_1 = 5
             nas_broj_tim_2 = 7
@@ -34,9 +36,9 @@ class Mec:     #       tim   tim   int     skor
                 self.skor.gosti +=1
 
             print(f'{self.domaci.nazivTima}-{self.gosti.nazivTima}')
-            print(f'{self.domaci.skor}:{self.gosti.skor}')
+            print(f'{self.skor.domaci}:{self.skor.gosti}')
             
-            time.sleep(5)
+            time.sleep(0.5)
             
             self.minuti += 1
             
