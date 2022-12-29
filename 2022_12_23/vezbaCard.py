@@ -19,8 +19,12 @@ class Master(Card):
     def pay(self, suma):
         self.stanje -= suma * self.porez
 
-visacard1 = Visa(123, 500)
+visacard1 = Visa(123, 500000)
 visacard1.pay(200)
 print(visacard1.stanje)
+
+mastercard1 = Master(1212, 5000000)
+mastercard1.pay(2500)
+print(mastercard1.stanje)
 
 print(isinstance(visacard1, Card)) #proverava da li je tipa Card ### isinstance(ono sta proverava, ove klase) daje True or False
