@@ -1,0 +1,27 @@
+body {
+    font-family: Georgia;
+}
+
+.outer {
+    background-color: antiquewhite;
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid
+}
+.inner {
+    font-family: Arial;
+    background-color: wheat;
+    padding: 10px;
+    border: 2px solid;
+    margin: 10px auto;
+}
+#red {
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+#white {
+    background-color: white;
+}
