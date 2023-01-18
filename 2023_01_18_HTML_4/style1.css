@@ -1,0 +1,15 @@
+.wrapper {
+    border: 5px solid brown;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prvi{
+    color: blue;
+}
+.drugi{
+    color: orange;
+}
+.treci {
+    color: green;
+}
