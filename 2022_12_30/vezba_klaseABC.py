@@ -1,6 +1,8 @@
 from abc import *
 import time
 
+# VEZBA OD PROSLOG PREDAVANJA #
+
 class Trening(ABC):
     def __init__(self, naziv, trajanje, kalorije):
         self.naziv = naziv

@@ -1,3 +1,6 @@
+    #--------------------------------------#
+    #     PRIMER GETTER SETTER JAVA WAY    #               # MENI BOLJI METOD od sledeceg
+    #--------------------------------------#
 class Osoba:
     def __init__(self, ime, prezime):
         self.ime = ime
@@ -6,7 +9,7 @@ class Osoba:
     
     def get_jmbg(self): 
         if self.__jmbg != "":
-            prvi_deo = self.__jmbg[0:9]                    # MENI BOLJI METOD od sledeceg
+            prvi_deo = self.__jmbg[0:9]                    
             izlaz = prvi_deo + "****"
             return izlaz
         else:
@@ -26,3 +29,4 @@ o1 = Osoba('sofija', 'sofilic')
 print(o1.get_jmbg())
 o1.set_jmbg("1234567891011")
 print(o1.get_jmbg())
+#-------------------------------------------------------
