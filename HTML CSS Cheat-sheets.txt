@@ -1,0 +1,94 @@
+
+<!-- HTML:
+
+<title> naziv cele stranice   </title>
+<h1> heading   (naslov)  </h1>    
+<p>  paragraph           </p>
+
+<table>  tabela           </table>
+   <tr>  table row        </tr>     - prvi red tabele
+   <td>  table data cell  </td>     - podatak u tabeli, jedna zasebna celija
+   <th>  table heading    </th>     - oznaka tabele se nalazi u th
+   <colspan>=""                     - column span(prostiranje kolone), ide u stranu
+
+<ul> unordered list      </ul>
+<ol> ordered list        </ol>
+   <li> list item           </li>
+
+<a>  anchor (hiperlink)  </a>
+    href=""             - tu se pise link ili destinacija kao folder
+    target="_blank"     - link otvara u novom tabu
+
+<span> </span>
+<img> image
+    src=""              - destinacija gde se nalazi slika
+    alt=""              - alternativni tekst
+    width=""            - sirina slike
+    title=""            - opis slike kada se mis zadrzi nad slikom
+
+span - inlajn element, mozese klasirati i slicno
+-->
+
+
+<!-- CSS:
+
+    # - id="" za tacno neki tag
+. - class="" za vise puta
+
+-->
+
+
+
+
+
+
+
+
+paragrafi, naslovi i slicno imaju defoltnu marginu koja pravi razmak iznad i ispod
+
+blokovima se definise struktura(div,h1,o,li,table)
+blok element ide u novi red
+inline (linkovi, bold, italic,
+inline blokovi u sebi samo mogu imati druge inline blokove i tkst tog tipa..
+u blok elemente moze da ide inline a u inline ne moze da ide blok element
+
+span, div - jedni od osnovnih gradivnih elemenata
+
+display - jedna od najbitnijih svojstva cssa, odredjuje tip prikaza
+
+
+overflow:  - ono sto preliva 
+	  hidden - sakriva
+	  scroll - daje da se skroluje
+overflow-x - daje skrol po x osi
+overflow-y - daje skrol po y osi
+
+
+box-sizing: content-box; - tekst se kalupi ka spolja    18.1.2023. 48:54
+box-sizing: border-box;  - tekst se kalupi ka unutra
+
+
+
+
+ako nema tekst VISINA diva ce biti 0
+
+display: flex; njgova deca postaju fleks itemy a  on ostaje blok element, redja po horizontali
+	       elemente suzava
+justify-content: ; odredjuje kako se rasporedjuju deca flexa na njegovoj osnovnoj osi
+flex-start; - deca na pocetku
+flex-end; - na kraj ih stavlja
+center; - na cenfru
+space-between; - visak rasporedjuje izmedju divova
+space-evenly;  - jednaki razmaci svuda
+
+align-items: redja po vertikali
+             center; -redja na centru
+             start;  -redja gore
+             end;    -redja dole
+
+U flexu se preporucuje da ne pisete width za sirinu vec flex-basis: __px; on radi samo za decu flexa
+googlajte flex options ako zanima jos
+
+
+profa uvekna pocektku projekta stavlja u cssu margin: 0; i pedding: 0;
+ 

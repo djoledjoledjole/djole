@@ -1,0 +1,37 @@
+body {
+    background-color: #cc9966;
+}
+.wrapper {
+    width: 950px;
+    padding: 15px;
+    background-color: white;
+    margin: 20px auto 0;
+}
+.heading {
+    background-color: #8cc63f;
+    height: 150px;
+}
+.nav {
+    background-color: #534741;
+    height: 40px;
+    margin: 15px auto;
+}
+.centralni {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+.main{
+    flex-basis: 660px;
+    background-color: #e6e6e6;
+    height: 500px;
+}
+.sider {
+    flex-basis: 280px;
+    background-color: #cccc99;
+    height: 500px;
+}
+.donji {
+    background-color: #534741;
+    height: 40px;
+}

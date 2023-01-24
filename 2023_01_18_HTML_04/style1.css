@@ -1,0 +1,22 @@
+.wrapper{
+    width: 700px;
+    border: 5px solid rgb(255, 47, 141);
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+}
+.prvi{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
+.drugi{
+    background-color: green;
+    width: 200px;
+    height: 100px;
+}
+.treci{
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+}

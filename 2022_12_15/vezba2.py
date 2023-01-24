@@ -27,16 +27,16 @@ class Mec:     #       tim   tim   int     skor
             nas_broj_tim_1 = 5
             nas_broj_tim_2 = 7
 
-            if nas_broj_tim_1 == random.randint(0,10):
+            if nas_broj_tim_1 == random.randint(0,25):
                 self.skor.domaci +=1
                 self.skor.gosti +=0
 
-            if nas_broj_tim_2 == random.randint(0,10):
+            if nas_broj_tim_2 == random.randint(0,25):
                 self.skor.domaci +=0
                 self.skor.gosti +=1
 
             print(f'{self.domaci.nazivTima}-{self.gosti.nazivTima}')
-            print(f'{self.skor.domaci}:{self.skor.gosti}')
+            print(f'({self.minuti}\') {self.skor.domaci}:{self.skor.gosti}')
             
             time.sleep(0.5)
             

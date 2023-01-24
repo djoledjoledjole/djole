@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.wrapper {
+    background-color: blueviolet;
+    margin: 0px auto;
+    width: 500px;
+}
+
+.prvi {
+    background-color: burlywood;
+    margin: 0px;
+}
+
+.drugi {
+    background-color: aquamarine;
+    margin: 0;
+}
+.x {
+    font-weight: 700;
+    background-color: lime;
+}
