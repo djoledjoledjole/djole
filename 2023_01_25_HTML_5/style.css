@@ -1,0 +1,45 @@
+body {
+    background-color: #cc9966;
+}
+.wrapper {
+    width: 950px;
+    padding: 15px;
+    background-color: white;
+    margin: 20px auto 0;
+}
+.heading {
+    background-color: #8cc63f;
+    height: 150px;
+}
+.nav {
+    background-color: #534741;
+    height: 40px;
+    margin: 15px auto;
+}
+.centralni {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+.main{
+    flex-basis: 640px;
+}
+.sider {
+    flex-basis: 280px;
+}
+.donji {
+    background-color: #534741;
+    height: 40px;
+}
+.imgright {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+.block {
+    border: 1px solid #999;
+    margin-bottom: 15px;
+    padding:  15px;
+}
+
+
+we.tl/t-XDrXJrAO7q
