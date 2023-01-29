@@ -19,7 +19,7 @@ class TestKalkulator(unittest.TestCase):
     def test_sabiranje(self):
         kalkulator = Calculator()
         ocekivano = 5
-        dobijeno = kalkulator.saberi(2,3)
+        dobijeno = kalkulator.saberi(2,3)             # !!!!!!!!!!!!!!!!!!!!!!!
 
         self.assertEqual(ocekivano, dobijeno)
 
