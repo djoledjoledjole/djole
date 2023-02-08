@@ -1,9 +1,9 @@
 
-<!-- HTML:
+<!-- HTML _01 - _04:
 
-<title> naziv cele stranice   </title>
-<h1> heading   (naslov)  </h1>    
-<p>  paragraph           </p>
+<title>  naziv cele stranice   </title>
+   <h1>  heading   (naslov)    </h1>    
+    <p>  paragraph             </p>
 
 <table>  tabela           </table>
    <tr>  table row        </tr>     - prvi red tabele
@@ -11,44 +11,41 @@
    <th>  table heading    </th>     - oznaka tabele se nalazi u th
    <colspan>=""                     - column span(prostiranje kolone), ide u stranu
 
-<ul> unordered list      </ul>
-<ol> ordered list        </ol>
-   <li> list item           </li>
+<ul>  unordered list    </ul>
+<ol>  ordered list      </ol>
+  <li>  list item       </li>
 
 <a>  anchor (hiperlink)  </a>
-    href=""             - tu se pise link ili destinacija kao folder
-    target="_blank"     - link otvara u novom tabu
+     href=""             - tu se pise link ili destinacija kao folder
+     target="_blank"     - link otvara u novom tabu
 
-<span> </span>
 <img> image
     src=""              - destinacija gde se nalazi slika
     alt=""              - alternativni tekst
     width=""            - sirina slike
     title=""            - opis slike kada se mis zadrzi nad slikom
 
-span - inlajn element, mozese klasirati i slicno
+<span> </span> - inlajn element, mozese klasirati i slicno
 -->
+
 
 
 <!-- CSS:
 
-    # - id="" za tacno neki tag
-. - class="" za vise puta
+#  -  id="" za tacno neki tag
+.  -  class="" za vise puta
 
 -->
 
 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-paragrafi, naslovi i slicno imaju defoltnu marginu koja pravi razmak iznad i ispod
+Paragrafi, naslovi i slicno imaju defoltnu marginu koja pravi razmak iznad i ispod
 
 blokovima se definise struktura(div,h1,o,li,table)
 blok element ide u novi red
-inline (linkovi, bold, italic,
+inline (linkovi, bold, italic,span...)
 inline blokovi u sebi samo mogu imati druge inline blokove i tkst tog tipa..
 u blok elemente moze da ide inline a u inline ne moze da ide blok element
 
@@ -64,9 +61,8 @@ overflow-x - daje skrol po x osi
 overflow-y - daje skrol po y osi
 
 
-box-sizing: content-box; - tekst se kalupi ka spolja    18.1.2023. 48:54
-box-sizing: border-box;  - tekst se kalupi ka unutra
-
+box-sizing: content-box;   - tekst se kalupi ka spolja    18.1.2023. 48:54
+box-sizing: border-box;    - tekst se kalupi ka unutra
 
 
 
@@ -82,13 +78,77 @@ space-between; - visak rasporedjuje izmedju divova
 space-evenly;  - jednaki razmaci svuda
 
 align-items: redja po vertikali
-             center; -redja na centru
-             start;  -redja gore
-             end;    -redja dole
+             center; - redja na centru
+             start;  - redja od gore
+             end;    - redja od dole
 
 U flexu se preporucuje da ne pisete width za sirinu vec flex-basis: __px; on radi samo za decu flexa
-googlajte flex options ako zanima jos
+googlajte flex options ako vas zanima jos
 
 
-profa uvekna pocektku projekta stavlja u cssu margin: 0; i pedding: 0;
- 
+Profa uvek na pocektku projekta stavlja u css-u margin: 0; i pedding: 0;
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+HTML and CSS _05 25.1.2023.
+
+
+Divovi su po difoltu providni
+
+Deca fleksa bez podesavanja align-itemsa imace visinu najveceg(sliku recimo ce razvuci u visinu duzeg teksta)
+
+align-items: stretch; - difoltna vrednost
+
+p ne prepoznaje float pre sebe
+p ide isod flouta, ali tekst tog p vidi i odbija se od float
+
+------------------------------------------------------------------------------------------------------------------------
+
+position: static;   - difoltna vrednost
+
+position: relative; - relativna pozicija, kao makazama iseceno, premesten je vizuelno, ali i dalje stoji, pocetna pozicija rezervisana za njega
+left: 100px         - pomera udesno 100px
+top: 60px           - pomera od gore ka dole za 60px
+
+position: absolut;  - za razliku od relativa ide prema pocetku bodija, citave stranice.
+		    - napusta svoje mesto.
+		    - sirina zavisi od kontenta dok mu na damo width.
+
+position: fixed;    - fiksiran je za prozor, a ne za body, skroluje se zajedno sa njim
+		    - moze da se koristi za  "chat with us"  u donjem desnom uglu
+
+Position elementi, koji je ispred koga, u slucaju da dodje do preklapanja, odredjuje redosled u HTML-u. Ide samo uz *position*!
+NJihovo pozicioniranje ze vrsi pomocu:
+z-index: (neki broj)
+	 koji ima veci broj od je u prednosti
+
+ako roditalju dodamo position: relative; onda će dete koje ima position: absolute; top:0 right:0 da se prilagodi roditelju. 02:12h
+
+------------------------------------------------------------------------------------------------------------------------
+
+FONTOVI:
+
+google fonts
+https://fonts.google.com/
+
+Gradacija tezine teksta:
+            obican font: 400
+         standardi bold: 700
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

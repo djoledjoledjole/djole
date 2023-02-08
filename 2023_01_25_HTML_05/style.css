@@ -1,8 +1,5 @@
 body {
     background-color: #cc9966;
-    text-align: justify;
-    font-family: 'Rubik', sans-serif;
-
 }
 .wrapper {
     width: 950px;
@@ -39,10 +36,13 @@ body {
     margin: 0 0 10px 20px;
 }
 .block {
-    border: 1px solid #999;
-    margin-bottom: 15px;
-    padding:  15px;
+    border: solid gray 1px;
+    margin: 15px;
+    padding: 15px;
 }
-
-
-/* we.tl/t-XDrXJrAO7q */
+#poseban {
+    background-color: lime;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
