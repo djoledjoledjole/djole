@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+}
+p {
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.wrapper {
+    width: 1000px;
+    margin: 20px auto;
+    border: #914020 solid 2px;
+}
+.red {
+    display:flex;
+}
+.belo {
+    width: 100px;
+    height: 100px;
+    background-color: #f0db9c;
+    font-size: 545%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.crno {
+    width: 100px;
+    height: 100px;
+    background-color: #914020;
+    font-size: 545%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prazan {
+    display: flex;
+}
+.poljeprazno {
+    width: 100px;
+    height: 100px;
+    background-color: #fffee6;
+    font-size: 200%;
+    text-align: center;
+}
