@@ -18,14 +18,14 @@ def mreza(health):
 
     s = socket.socket()
     s.connect(("127.0.0.1", 8000))
-    print(f"Slanje healtha za heroja, preko mreze ({health})")
+    print(f"Slanje healtha za heroja, preko mreze ({health})".encode()) #ovde roka hete preko mreze
 
 def displej(health):
     print(f"Prikaz izmene health-a na displeju ({health})")
 
 wind = Heroj()
 wind.slusaci_promene_healtha.append(hud)
-wind.slusaci_promene_healtha.append(mreza)
+# wind.slusaci_promene_healtha.append(mreza)
 wind.slusaci_promene_healtha.append(displej)
 
 for i in range(10):

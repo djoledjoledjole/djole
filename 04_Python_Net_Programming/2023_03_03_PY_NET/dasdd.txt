@@ -1,0 +1,4 @@
+opis    GET je metod.    POST je da ce bii nesto u telu.
+zaglavlja
+telo
+novi red je kraj zahteva
