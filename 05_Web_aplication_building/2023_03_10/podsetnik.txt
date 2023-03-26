@@ -1,0 +1,5 @@
+-ulazni tok se nalazi u           self.rfile   ono sto je stiglo od browzera, zapravo samo telo
+-izlazni tok se nalazi u          self.wfile   to ide do browzera
+
+
+stigao do 1:21
