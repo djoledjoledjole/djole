@@ -1,0 +1,65 @@
+MySQL 02
+
+
+model-objekti-veze
+
+na njemu crtamo entitete-pojmove sa kojimacemo baratati u aplikaciji i veze izmedju njih. Tu koristimo nekoliko grafickih simbola
+
+pravougaonik je entitet
+oval je atribut tog entiteta
+crtica je veza
+povezujuci entitet je.....
+
+prvo se definisu entiteti koji nemaju zavisnost ni od koga
+
+nazivi tabela, uvek mala slova, uvek im se dodaje prefiks
+
+
+myisam - pogledati.. ne mozw da zakljuca redove, nema strane kljuceve...
+
+inodb - sporija, zakljucava redove, mmoze transakcije....
+
+kolone su zapravo atributi
+
+PK - primarni kljuc je karakteristika neke kolone u bazi podataka. Ogranicenje koje se sprovodi nad nekom kolonom i sprecava da se ponovi ista vrednost, entitesko ogranicenje. On je nesto sto iddentifikuje red. On moze da bude prirodan ili vestacki...
+
+UQ - unique kasterovani indeks se pojavljuje, sistem za pretragu
+NN- not nul - mora da ide nesto
+ZF - zero fil - popunjava sa nulama 1 - 00001
+AI - automatski generise ID-eve
+G generise vrednst za datu kolonu
+
+
+VARCAR(45) - mnogo bitno 
+
+
+strani kljuc je ono kada stavljamo id neke kolone u drugu kolonu.
+kolona koja sestavlja u drugu kolonu mora da bude identicna po onim stavkama AI i to
+
+MySQL 03
+
+FOREIGN KEY OPTIONS
+on update - no action   znaci da ne dozvoljava menjanje ako je kljuc u upotrebi
+on delete - no action   znaci da ne dozvoljava brisanje ako je kljuc u upotrebi
+          - cascade     
+		  
+		  
+DML - data manipulation language - komande: select insert update delete
+DDL - data definition language   - komande: create drop update
+CRUD - create reaad update delete
+DCL - data control language - controlni jezik
+
+create drop alter - definicione
+
+grent i rewoke - kontrolne
+
+
+
+MySQL u cmd
+
+help create table - daje sve o komandi create
+ono sto je u [] to je opciono
+
+create database - kreira bazu
+drop database   - brise bazu
+use _______     - koristi databazu
