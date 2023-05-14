@@ -1,0 +1,68 @@
+Web Applications Building LS1 4/8
+Vreme početka: 24.3.2023. 17:30
+Predavač: Vladimir Marić - Django okvir - Rad sa šablonima - Parametrizacija
+NAJBOLJE ZA DJANGO
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+]
+path je nesto sto otkucamo u browseru i ono sto ce se destiti kada otkucamo to nesto u browseru
+
+django je mct model contoler template
+mcv je model contorler view
+u djangu je model-viev jedno
+a template je ono sto je view u mvc-u
+
+------------------------------------------------------------------------------------
+
+TEMPLATES = [
+    {
+        'DIRS': [ BASE_DIR / 'templates' ],
+		
+	ovde ide putanja za sablone(templates)
+	
+da bi se ovo ucitalo:
+from django.shortcuts import render
+ funkcija koja prihvata http request(atribut funkcije koja se poziva u views) i na osnoviu toga vrati objekat klase HTTPResponce koji mi vracamo kao rezultrat funkcije..
+
+from django.shortcuts import render
+def naslovnastrana(request):
+    odgovor = render(request, 'proba.html')
+    return odgovor
+------------------------------------------------------------------------------------
+CSS i IMGs moraju u static folder
+i putanja mora da se promeni:
+static/style.css
+
+
+STATIC_URL = 'static/'
+sta korisnik da kuca u url-u da bi dosao do foldera sa statickim falovima
+
+STATICFILES_DIRS = [ BASE_DIR / 'static']
+ovo je putanja foldera u kome da trazi staticke fajlove
+------------------------------------------------------------------------------------
+template engine jezik
+{{ }}	-  varijable, stavlja se bilo kakav idetifikator
+{% %}   -  tag, vlada vise voli da zove to direktiva	
+
+
+
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+>pip install django
+>python django startproject .........
+python manage.py runserver
+
+
+
+------------------------------------------------------------------------------------
+komande preko django-admin
+
+>django-admin startproject .........
+python manage.py runserver
+
+
+
+stao do 2:30
